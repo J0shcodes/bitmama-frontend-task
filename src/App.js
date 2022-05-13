@@ -23,7 +23,7 @@ const App = () => {
     return (
         <div className={classes.app}>
             <div className={classes.user}>
-                <h1>Welcome {}</h1>
+                <h1>Welcome {userdetails.username}</h1>
                 <button onClick={(e) => handleLogout(e)}>Log Out</button>
                 <Link to="/" target="_blank">Sign in with a different username</Link>
             </div>

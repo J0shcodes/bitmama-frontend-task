@@ -25,6 +25,7 @@ export const webPage = (userdetails, currentState, classes, handleLogout) => {
                       <button style={{ background: "blue" }}>log out</button>
                     </span>
                   </p>
+                  <small>Status: active</small>
                 </div>
               ))}
             </div>
@@ -35,7 +36,7 @@ export const webPage = (userdetails, currentState, classes, handleLogout) => {
       return (
         <div className={classes.app}>
           <div className={classes.login}>
-              <p>No data to display <span><Link to="/login">Login</Link></span></p>            
+              <p>No data to display <span><Link to="/login">Login</Link></span></p>          
           </div>
         </div>
       );
@@ -61,7 +62,9 @@ export const webPage = (userdetails, currentState, classes, handleLogout) => {
                   <span>
                     <button style={{ background: "blue" }}>log out</button>
                   </span>
+                  
                 </p>
+                <small>Status: active</small>
               </div>
             ))}
           </div>

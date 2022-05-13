@@ -15,6 +15,7 @@
   padding: 2rem 2rem;
   border-radius: 10px;
   text-align: center;
+  height: 100vh;
 }
 
 .user button {
@@ -31,4 +32,22 @@
 .user a {
   margin-left: 0.5rem;
   font-size: 17px;
+}
+
+.current_user {
+  margin-bottom: 2rem;
+}
+
+.users {
+  background: #080710;
+  overflow-y: scroll;
+}
+
+.container {
+  background: #fff;
+  color: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;  
 }

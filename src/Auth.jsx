@@ -35,7 +35,7 @@ const Auth = () => {
     )
 
     
-    navigate('/home');
+    navigate('/');
 
   };
 

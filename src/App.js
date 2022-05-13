@@ -1,28 +1,42 @@
-import { useDispatch } from "react-redux";
-import {useNavigate } from "react-router-dom";
-import classes from "./css/App.module.css";
-import { logout } from "./features/userSlice";
-import { loadState, loadCurrentState } from "./localStorage";
-import { webPage } from "./page/Homepage";
-const currentState = loadCurrentState();
+import WebPage from './page/Homepage'
+
+// import { useDispatch } from "react-redux";
+// import {useNavigate } from "react-router-dom";
+// import classes from "./css/App.module.css";
+// import { logout } from "./features/userSlice";
+// import { loadState, loadCurrentState } from "./localStorage";
+// import userLogout from './helper/logout'
+// const currentState = loadCurrentState();
 
 const App = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const userdetails = loadState();
-  console.log(userdetails);
-  // const user = userdetails.userState;
-  // const username = user.user.username
+//   const dispatch = useDispatch();
+//   const navigate = useNavigate();
+//   const userdetails = loadState();
+//   console.log(userdetails);
+//   // const user = userdetails.userState;
+//   // const username = user.user.username
 
-  const handleLogout = (e) => {
-    e.preventDefault();
+//   const handleLogout = (currentState, attr, username) => {
 
-    dispatch(logout());
+//     dispatch(logout());
 
-    navigate("/");
-  };
+//     userLogout(currentState, attr, username)
+
+//     navigate("/login");
+//   };
+
+//   const handleUserLogout = (currentState, attr, username) => {
+
+//     dispatch(logout());
+
+//     userLogout(currentState, attr, username);
+//   };
+
+//   const details = {userdetails, currentState, classes}
+
   return (
-    webPage(userdetails, currentState, classes, handleLogout)
+      <WebPage/>
+    // webPage(userdetails, currentState, classes, handleLogout, handleUserLogout)
     // <div className={classes.app}>
         
     //   <div className={classes.user}>

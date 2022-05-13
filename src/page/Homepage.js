@@ -35,7 +35,7 @@ export const webPage = (userdetails, currentState, classes, handleLogout) => {
       return (
         <div className={classes.app}>
           <div className={classes.login}>
-            <Link to="/login">Login</Link>
+              <p>No data to display <span><Link to="/login">Login</Link></span></p>            
           </div>
         </div>
       );

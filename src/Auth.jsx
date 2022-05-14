@@ -16,14 +16,13 @@ const Auth = () => {
     setUsername(e.target.value)
   }
 
-  console.log(username);
-
   const handleSubmit = e => {
     e.preventDefault();
 
     store.subscribe(() => {
       saveUser({
-        username: username
+        username: username,
+        status: 'active'
       })
     })
 
